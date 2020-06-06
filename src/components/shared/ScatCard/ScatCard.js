@@ -17,8 +17,8 @@ class ScatCard extends React.Component {
         <div className="card">
           <div className="card-body">
             <h5 className="card-title">{scat.location}</h5>
-            <Link className="btn btn-info ml-1" to={singleLink}> <i class="fas fa-binoculars"></i> </Link>
-            <Link className="btn btn-warning" to={editLink}> <i class="fas fa-pencil-alt"></i> </Link>
+            <Link className="btn btn-info ml-1" to={singleLink}> <i className="fas fa-binoculars"></i> </Link>
+            <Link className="btn btn-warning mr-1" to={editLink}> <i className="fas fa-pencil-alt"></i> </Link>
             <p className="card-text">{scat.notes}</p>
           </div>
         </div>
