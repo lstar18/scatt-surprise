@@ -21,5 +21,8 @@ const getScatsByUid = (uid) => new Promise((resolve, reject) => {
 });
 const getSingleScat = (scatId) => axios.get(`${baseUrl}/scats/${scatId}.json`);
 const postScat = (newScat) => axios.post(`${baseUrl}/scats.json`, newScat);
+const removeScat = (scatId) => axios.delete(`${baseUrl}/scats/${scatId}.json`);
 
-export default { getScatsByUid, getSingleScat, postScat };
+export default {
+  getScatsByUid, getSingleScat, postScat, removeScat,
+};
